@@ -1,0 +1,3 @@
+different tree types
+binary, n-ary, trie
+data organized

@@ -1,0 +1,28 @@
+<config>
+	<test driver="ca.concordia.algos.RunSort" method="main" label="Check Student Input Data">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="Check output original array"><regex>32 62 50 42 75 91 18 57 3 47 71 7 80 33 38</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted runs"><regex>We counted 1 DECR run of length 2</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted structuring compares"><regex>We performed 14 compares during structuring</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted overall compares"><regex>We performed 89 compares overall</regex></check>
+		</mark>
+		<mark grade="20">
+			<check label="Check properly counted swaps"><regex>We performed 70 swaps overall</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted reversals"><regex>We performed 6 reversals of runs in ASC order</regex></check>
+		</mark>
+		<mark grade="30">
+			<check label="Check output sorted array"><regex>3 7 18 32 33 38 42 47 50 57 62 71 75 80 91</regex></check>
+		</mark>
+	</test>
+
+</config>
